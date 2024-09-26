@@ -30,21 +30,22 @@ function App() {
   };
 
   return (
-    <>
-      <form className=" " onSubmit={handleSubmit}>
-        <label htmlFor="topic">Topic:</label>
+    <div className="container">
+      <form className="form-center" onSubmit={handleSubmit}>
+        <label htmlFor="topic">Enter Topic: 
         <input
           type="text"
           id="topic"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
         />
+        </label>
         <button type="submit">Generate Flashcards</button>
         {error && <p className="error">{error}</p>}
       </form>
       <FlashCardList flashcards={flashcards} />    
-    </>
-  )
+    </div>
+  );
 }
 
 const SAMPLE_CARDS=[
