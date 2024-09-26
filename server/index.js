@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const axios = require('axios');
+const cors=require('cors')
 const app = express();
 const PORT = 5000;
 const OpenAI = require('openai');
