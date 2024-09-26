@@ -30,12 +30,6 @@ const flashcardSchema = new mongoose.Schema({
 
 const Flashcard = mongoose.model('Flashcard', flashcardSchema);
 
-const cors = require('cors');
-
-app.use(cors({
-  origin: 'http://localhost:5173' // Replace with your frontend origin
-}));
-
 app.get('/', (req, res) => {
   res.send('Hello World')
 })
