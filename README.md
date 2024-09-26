@@ -1,6 +1,8 @@
 # FlashCard-Interviews
 FlashCard-Interviews is a dynamic web application that helps users practice multiple-choice questions (MCQs) for interviews or learning new topics. By simply entering a topic of interest, the application fetches a set of MCQs along with the correct answers. The project is built using React for the frontend and uses an LLM (Language Model API) like Google or Gemini AI to fetch the answers in the backend. It aims to provide an engaging and interactive way to learn, revise, or prepare for interviews.
 
+# Deployed at: 
+https://flash-card-interviews-frontend.vercel.app/
 
 ## Features
 1. Interactive Flashcards: Users can input any topic, and the app presents a set of multiple-choice questions based on the entered topic.
