@@ -17,7 +17,7 @@ function App() {
     }
 
     try {
-      const response = await axios.post('https://flash-card-interviews.vercel.app//flashcards', { topic }); 
+      const response = await axios.post('https://flash-card-interviews.vercel.app/flashcards', { topic }); 
       console.log(response.data);
       setFlashcards(response.data);
       setError(null); 

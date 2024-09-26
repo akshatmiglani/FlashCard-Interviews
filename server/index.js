@@ -30,6 +30,8 @@ const flashcardSchema = new mongoose.Schema({
 
 const Flashcard = mongoose.model('Flashcard', flashcardSchema);
 
+app.use(cors());
+
 app.get('/', (req, res) => {
   res.send('Hello World')
 })
