@@ -36,7 +36,9 @@ app.use(cors({
   origin: 'http://localhost:5173' // Replace with your frontend origin
 }));
 
-
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
 
 app.post('/flashcards', async (req, res) => {
   console.log('Request called');
